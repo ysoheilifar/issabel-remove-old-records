@@ -5,7 +5,7 @@ we can write crontab to remove old file records
 2. create cronjob for execute every `$RECORDINGEXPIRY` days
 ```bash
 crontab -e
-0 0 * * * /var/spool/cron/decat_rotate.sh
+0 0 * * * /var/spool/cron/remove-old-records.sh
 ```
 3. check your cronjob
 ```bash
