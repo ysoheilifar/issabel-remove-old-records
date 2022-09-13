@@ -2,6 +2,8 @@
 we can write crontab to remove old file records
 1. copy `remove-old-records.sh` to `/var/spool/cron/`
 
+2. Set `775` or `777` permission to `remove-old-records.sh`
+
 2. create cronjob for execute every `$RECORDINGEXPIRY` days
 ```bash
 crontab -e
